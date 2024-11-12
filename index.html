@@ -40,14 +40,14 @@
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title lg:text-center">Triangle</h2>
-                  <p class="lg:text-center">Area = 0.5 X b X h</p>
+                  <p class="">Area = 0.5 X b X h</p>
                   <div class="">
 
                  
-                  <input id="triangle-base" class="w-[95px] text-2xl p-2 bg-white rounded-xl color-black" type="text" name="" id="" placeholder="b">
+                  <input id="triangle-base" class="w-20 text-2xl p-2 bg-white rounded-xl color-black" type="text" name="" id="" placeholder="b">
                   <span  class="mr-6 text-center">cm</span>
                     
-                  <input id="triangle-height" class="rounded-xl w-[95px] text-2xl p-2 bg-white color-black " type="text" placeholder="h">
+                  <input id="triangle-height" class="rounded-xl w-20 text-2xl p-2 bg-white color-black " type="text" placeholder="h">
                   <span>cm</span>
                 </div>
 
@@ -73,10 +73,10 @@
                   <p>Area (A) = W x L</p>
 
                   <div class="">
-                    <input id="rectangleInputWidth" class="w-24 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="W">
+                    <input id="rectangleInputWidth" class="w-20 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="W">
                     <span class="mr-6">cm</span>
 
-                    <input id="rectangleInputLength" class="bg-white p-2 text-2xl text-black w-24 rounded-xl" type="text" name="" id="" placeholder="l">
+                    <input id="rectangleInputLength" class="bg-white p-2 text-2xl text-black w-20 rounded-xl" type="text" name="" id="" placeholder="l">
                     <span class="">cm</span>
 
                   </div>
@@ -93,16 +93,30 @@
               </div>
 
               <div class="card bg-base-100  shadow-xl">
-                <figure>
+                <figure class="mt-2">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
+                    src="images/parallelogram.png"
+                    alt="" />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b x h</p>
+
+                  <div class="">
+                    <input id="paralleloInputb" class="w-20 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="b">
+                    <span class="mr-6">cm</span>
+
+                    <input id="paralleloInputh" class="bg-white p-2 text-2xl text-black w-20 rounded-xl" type="text" name="" id="" placeholder="h">
+                    <span class="">cm</span>
+
+                  </div>
+
+                  <div>
+                    <p>Area : <span id="paralleloarea"> </span><span>cm<sup>2</sup></span></p>
+                  </div>
+
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="parallelocalculate()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -130,40 +144,67 @@
               
 
               <div class="card bg-base-100  shadow-xl ">
-                <figure>
+                <figure class="mt-2">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
+                    src="images/rhombus.png"
+                    alt="" />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area(A) = 0.5 x d1 x d2</p>
+                  <div class="">
+                    <input id="rhombusInputd1" class="w-20 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="d1">
+                    <span class="mr-6">cm</span>
+
+                    <input id="rhombusInputd2" class="bg-white p-2 text-2xl text-black w-20 rounded-xl" type="text" name="" id="" placeholder="d2">
+                    <span class="">cm</span>
+
+                  </div>
+
+                  <div>
+                    <p>Area : <span id="rhombusarea"></span> <span>cm<sup>2</sup></span></p>
+                  </div>
+
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="rhombuscalculate()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
 
 
               <div class="card bg-base-100  shadow-xl">
-                <figure>
+                <figure class="mt-2">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="images/pentagon.png"
                     alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area (A) = 0.5 x p x b</p>
+
+                   <div class="">
+                    <input id="pentagonInputp" class="w-20 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="p">
+                    <span class="mr-6">cm</span>
+
+                    <input id="pentagonInputb" class="bg-white p-2 text-2xl text-black w-20 rounded-xl" type="text" name="" id="" placeholder="b">
+                    <span class="">cm</span>
+
+                  </div>
+
+                  <div>
+                    <p>Area : <span id="pentagonarea"> <span>cm<sup>2</sup></span></span></p>
+                  </div>
+
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="pentagoncalculate()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
 
               <div class="card bg-base-100  shadow-xl">
-                <figure>
+                <figure class="mt-2">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="images/ellipse.png"
                     alt="Shoes" />
                 </figure>
                 <div class="card-body">
@@ -197,5 +238,9 @@
      </footer>
      <script src="scripts/triangle-calculate.js"></script>
      <script src="scripts/rectangle-calculate.js"></script>
+     <script src="scripts/parallelo-calculate.js"></script>
+     <script src="scripts/rhombus.js"></script>
+     <script src="scripts/pentagon.js"></script>
+     <script src="scripts/ellipse.js"></script>
 </body>
 </html>
