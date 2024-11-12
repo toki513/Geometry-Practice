@@ -1,4 +1,4 @@
-console.log("Hellow rhombys")
+
 
 function rhombuscalculate(){
     const d1 = getInputValueByID('rhombusInputd1')

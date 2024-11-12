@@ -139,11 +139,11 @@
 
 
 
-            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 mx-4 gap-4">
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 mx-4 gap-4 mb-20">
 
               
 
-              <div class="card bg-base-100  shadow-xl ">
+              <div class="card bg-base-100  shadow-xl mb-10">
                 <figure class="mt-2">
                   <img
                     src="images/rhombus.png"
@@ -172,7 +172,7 @@
               </div>
 
 
-              <div class="card bg-base-100  shadow-xl">
+              <div class="card bg-base-100  shadow-xl mb-10">
                 <figure class="mt-2">
                   <img
                     src="images/pentagon.png"
@@ -192,7 +192,7 @@
                   </div>
 
                   <div>
-                    <p>Area : <span id="pentagonarea"> <span>cm<sup>2</sup></span></span></p>
+                    <p>Area : <span id="pentagonarea"> </span><span>cm<sup>2</sup></span></p>
                   </div>
 
                   <div class="card-actions justify-end">
@@ -201,18 +201,34 @@
                 </div>
               </div>
 
-              <div class="card bg-base-100  shadow-xl">
+              <div class="card bg-base-100  shadow-xl mb-10">
                 <figure class="mt-2">
                   <img
                     src="images/ellipse.png"
                     alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area (A) =   pi* ab</p>
+
+                   <div class="">
+                    <input id="ellipseInputa" class="w-20 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="a">
+                    <span class="mr-6">cm</span>
+
+                    <input id="ellipseInputb" class="bg-white p-2 text-2xl text-black w-20 rounded-xl" type="text" name="" id="" placeholder="b">
+                    <span class="">cm</span>
+
                   </div>
+
+                  <div>
+                    <p>Area : <span id="ellipsearea"> </span><span>cm<sup>2</sup></span></p>
+                  </div>
+
+                  <div class="card-actions justify-end">
+                    <button onclick="ellipsecalculate()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+
+
                 </div>
               </div>
             
