@@ -33,32 +33,61 @@
 
 
               <div class="card bg-base-100  shadow-xl">
-                <figure class="mt-2">
-                  <img
+                <figure class="mt-2 ">
+                  <img class="lg:w-4/6 "
                     src="images/triangle.png"
                     alt="" />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center">Triangle</h2>
-                  <p>Area = 0.5 X b X h</p>
-                  <div class="card-actions w-full">
-                    <button class="btn btn-primary">Calculate</button>
+                  <h2 class="card-title lg:text-center">Triangle</h2>
+                  <p class="lg:text-center">Area = 0.5 X b X h</p>
+                  <div class="">
+
+                 
+                  <input id="triangle-base" class="w-[95px] text-2xl p-2 bg-white rounded-xl color-black" type="text" name="" id="" placeholder="b">
+                  <span  class="mr-6 text-center">cm</span>
+                    
+                  <input id="triangle-height" class="rounded-xl w-[95px] text-2xl p-2 bg-white color-black " type="text" placeholder="h">
+                  <span>cm</span>
+                </div>
+
+                <div>
+                  <p >Area : <span id="showArea"></span> <span>cm<sup>2</sup></span></p>
+                </div>
+
+                  <div class="card-actions">
+                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
 
 
               <div class="card bg-base-100  shadow-xl">
-                <figure>
+                <figure class="mt-2">
                   <img
-                    src="images/triangle.png"
+                    src="images/rectangle.png"
                     alt="Shoe" />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="text-center card-title">Rectangle</h2>
+                  <p>Area (A) = W x L</p>
+
+                  <div class="">
+                    <input class="w-24 bg-white rounded-xl text-2xl text-black p-2" type="text" name="" id="" placeholder="W">
+                    <span class="mr-6">cm</span>
+
+                    <input class="bg-white p-2 text-2xl text-black w-24 rounded-xl" type="text" name="" id="" placeholder="l">
+                    <span class="">cm</span>
+
+                  </div>
+
+                  <div>
+                    <p>Area : <span id="rectangleArea"></span> <span>cm<sup>2</sup></span></p>
+                  </div>
+
+
+                  <div onclick="rectangleCalculate()" class="card-actions justify-end ">
+                    <button class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -166,5 +195,6 @@
      <footer>
 
      </footer>
+     <script src="scripts/triangle-calculate.js"></script>
 </body>
 </html>
